@@ -1,0 +1,42 @@
+/* block */
+.logo {
+  display: inline-block;
+  color: #000;
+  font-size: 42px;
+}
+
+.logo__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo--light {
+  color: white;
+}
+
+.logo--sm {
+  font-size: 24px;
+}
+
+.header {
+  background: lightgray;
+  padding: 15px;
+}
+
+.header__logo {
+  width: 220px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+.footer {
+  background-color: lightseagreen;
+  padding: 15px;
+  overflow: hidden;
+}
+
+.footer__logo {
+  float: right;
+  margin: 10px 0 0 0;
+}
