@@ -17,18 +17,36 @@
 }
 
 .light {
+  display: inline-block;
   width: 15px;
   height: 15px;
   background-color: #fff;
   border-radius: 50%;
 }
 
-.light--front.light--on {
+.light--yellow.light--on {
   background-color: yellow;
 }
 
-.light--back.light--on {
+.light--red.light--on {
   background-color: red;
+}
+
+.light--blue.light--on {
+  background-color: blue;
+}
+
+.siren {
+  width: 35px;
+  height: 20px;
+  border: 1px solid #000;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+}
+
+.siren__light {
+  top: 2px;
+  position: relative;
 }
 
 .car {
@@ -75,6 +93,52 @@
 .car__light-front {
   position: absolute;
   right: -2px;
+}
+
+.ambulance {
+  position: relative;
+}
+
+.ambulance__body {
+  width: 220px;
+  height: 120px;
+  border: 2px solid #000;
+  position: relative;
+  border-radius: 20px;
+}
+
+.ambulance__siren {
+  top: -22px;
+  left: calc(50% + 35px);
+  position: absolute;
+}
+
+.ambulance__wheel-back {
+  position: absolute;
+  left: 20px;
+  bottom: -28px;
+}
+
+.ambulance__wheel-front {
+  position: absolute;
+  right: 20px;
+  bottom: -28px;
+}
+
+.ambulance__light-back {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: -10px;
+  top: 50%;
+}
+
+.ambulance__light-front {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: -10px;
+  top: 50%;
 }
 
 .frame {

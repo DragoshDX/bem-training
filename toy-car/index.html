@@ -17,16 +17,26 @@
     rel="stylesheet"
     href="style.css"
   >
+  <script src="app.js"></script>
 </head>
 
 <body>
-
-  <!-- <div class="wheel">
+  <!-- isolation - styleguideul -->
+  <div class="wheel">
     <div class="wheel__cap"></div>
   </div>
 
-  <div class="light light--on light--front"></div>
-  <div class="light light--on light--back"></div>
+  <div class="light light--on light--yellow"></div>
+  <div class="light light--on light--red"></div>
+  <div class="light light--on light--blue"></div>
+
+  <div
+    class="siren"
+    style="position: absolute; right: 2px;"
+  >
+    <div class="light light--on light--red siren__light"></div>
+    <div class="light light--on light--blue siren__light"></div>
+  </div>
 
   <div class="frame"></div>
 
@@ -45,7 +55,31 @@
         <div class="wheel__cap"></div>
       </div>
     </div>
-  </div> -->
+  </div>
+
+  <div
+    class="ambulance"
+    style="position: absolute; right: 200px;"
+  >
+    <div class="ambulance__body">
+      <div class="siren ambulance__siren">
+        <div class="light light--on light--red siren__light"></div>
+        <div class="light light--on light--blue siren__light"></div>
+      </div>
+
+      <div class="light light--on light--red ambulance__light-back"></div>
+      <div class="light light--on light--yellow ambulance__light-front"></div>
+
+      <div class="wheel ambulance__wheel-back">
+        <div class="wheel__cap"></div>
+      </div>
+
+      <div class="wheel ambulance__wheel-front">
+        <div class="wheel__cap"></div>
+      </div>
+    </div>
+  </div>
+  <!-- isolation - styleguideul -->
 
 
   <div class="frame">
@@ -53,8 +87,9 @@
       <div class="car__top"></div>
 
       <div class="car__body">
-        <div class="light light--front car__light-front"></div>
-        <div class="light light--back car__light-back"></div>
+        <div class="light light--yellow car__light-front"></div>
+        <div class="light light--red car__light-back"></div>
+
 
         <div class="wheel car__wheel-front">
           <div class="wheel__cap"></div>
@@ -66,6 +101,16 @@
       </div>
     </div>
   </div>
+
+
+
+  <am-wheel></am-wheel>
+  <am-light
+    data-position="front"
+    on="true"
+  ></am-light>
+  <am-light data-position="back"></am-light>
+
 
 
 </body>
