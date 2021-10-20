@@ -1,0 +1,90 @@
+.wheel {
+  width: 50px;
+  height: 50px;
+  background-color: #000;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wheel__cap {
+  width: 60%;
+  height: 60%;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.light {
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.light--front.light--on {
+  background-color: yellow;
+}
+
+.light--back.light--on {
+  background-color: red;
+}
+
+.car {
+  position: absolute;
+}
+
+.car__top {
+  position: absolute;
+  width: 130px;
+  height: 45px;
+  background-color: #000;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  left: 24px;
+}
+
+.car__body {
+  position: absolute;
+  width: 180px;
+  height: 45px;
+  background-color: #000;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  top: 40px;
+}
+
+.car__wheel-front {
+  position: absolute;
+  bottom: -20px;
+  left: 5px;
+}
+
+.car__wheel-back {
+  position: absolute;
+  bottom: -20px;
+  right: 5px;
+}
+
+.car__light-back {
+  position: absolute;
+  left: -2px;
+}
+
+.car__light-front {
+  position: absolute;
+  right: -2px;
+}
+
+.frame {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #000;
+}
+
+.frame__car {
+  position: absolute;
+  top: 55px;
+  left: 20px;
+}
